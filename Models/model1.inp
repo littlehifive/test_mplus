@@ -1,0 +1,28 @@
+TITLE:
+LBY1 Baseline Factor Analysis
+DATA:
+FILE = "Models/model1_287add39f3aa2ff5b540a569d24e7572.dat";
+ 
+VARIABLE:
+NAMES = LOCIDY1N HALF PSRA1 PSRA2 PSRA3 PSRA4 PSRA5 PSRA6 PSRA7 PSRA8 PSRA9 PSRA10
+     PSRA12 PSRA13 PSRA11; 
+ MISSING=.;
+    
+
+ Usevariables are
+      PSRA1-PSRA10 PSRA11 PSRA12 PSRA13;
+ 
+ Categorical is    
+      PSRA1-PSRA10 PSRA11 PSRA12 PSRA13 ;
+ 
+    Cluster is LOCIDY1N;
+    
+    Subpopulation is half eq 0;
+ANALYSIS:
+Type = complex;
+   Estimator =wlsmv;
+MODEL:
+PSRA by PSRA1* PSRA2-PSRA10 PSRA11 PSRA12 PSRA13;	 
+   PSRA@1;
+OUTPUT:
+sampstat stdy modindices(all);

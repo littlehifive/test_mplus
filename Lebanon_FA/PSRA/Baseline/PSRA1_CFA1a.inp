@@ -1,0 +1,97 @@
+Title: LBY1 Baseline Factor Analysis;
+
+Data:
+   File is ../../../../MR automation/LBY1B_PREIMPUTED_FULL_SPREAD_10-31-2019_mplus.dat ;
+
+Variable:
+   Names are     STID_Y1N    CID_1N      CID_2N      CID_3N      LOCIDY1N    RAND        
+     HALF        PACKET_Y    MI          MS          FEMALE      AGE_4       
+     AGE_1       GRADE       TXC1        TXC2        DISTRICT    TENT        
+     HPROB       ASER_AR1    ASER_SL1    ASER_MA1    ASER_AR3    ASER_SL3    
+     ASER_MA3    CLANG       RLVC1       SDAYC1      SDAYC2      ATTNC1      
+     ATTNC2      SCHTR_T     SCHMIN      ARGUE       C_SRYR      MFQ1        
+     MFQ2        MFQ3        MFQ4        MFQ5        MFQ6        MFQ7        
+     MFQ8        MFQ9        MFQ10       MFQ11       MFQ12       MFQ13       
+     RSQS1       RSQS2       RSQS3       RSQS4       RSQS5       RSQS6       
+     RSQS7       RSQS8       RSQS9       RSQS10      RSQCT       RSIE1       
+     RSIE2       RSIE3       RSIE4       RSIE5       RSIE6       RSIE7       
+     RSIE8       RSIE9       RSIE10      RSIE11      RSIE12      RSIE13      
+     RSIE14      RSIE15      CFS1        CFS2        CFS3        CFS4        
+     CFS5        CFS6        CFS7        CFS8        CFS9        CFS10       
+     CFS11       CFS12       CFS13       CFS14       CFS15       CFS16       
+     CFS17       CFS18R      CFS19       CFS20R      CFS21       CFS22       
+     CFS23       CFS24       CFS25       CFS26       CFS27       CFS28       
+     CFS29       CFS30       CFS31       CFS32R      CFS33R      CFS34R      
+     HB1_AB      HB1_AD      HB1_SD      HB1_PS      HB1_DGT     HB1_AR      
+     HB1_REC     HB2_AB      HB2_AD      HB2_SD      HB2_PS      HB2_DGT     
+     HB2_AR      HB2_REC     HB3_AB      HB3_AD      HB3_SD      HB3_DGT     
+     HB3_PS      HB3_AR      HB3_REC     HB4_AB      HB4_AD      HB4_SD      
+     HB4_PS      HB4_AR      HB4_DGT     HB4_REC     HB5_AB      HB5_AD      
+     HB5_SD      HB5_AR      HB5_PS      HB5_DGT     HB5_REC     HB6_AB      
+     HB6_AD      HB6_SD      HB6_DGT     HB6_AR      HB6_PS      HB6_REC     
+     PR_WK       PSRA1       PSRA2       PSRA3       PSRA4       PSRA5       
+     PSRA6       PSRA7       PSRA8       PSRA9       PSRA10      PSRA12      
+     PSRA13      PARAGE      REL         SCHTIME     OTHSC       OSCH_N      
+     NOSCH       NOS_R0      NOS_R5      NOS_R6      NOS_R7      NOS_R8      
+     NOS_R9      RM_TR       RM_DIS      T_HOUS      ADULTN      CHILDN      
+     CHDCARE     TOILET      WATER       BASIC       Q_HOUS      PR_LIT      
+     PLT_AR      PLT_FR      PLT_EN      PLT_OT      PRWK_T      FAMWK       
+     INCOME      INC_REL     NOWKCH      CHWK_PD     CHWK_HRS    CHWK_HOM    
+     CHWK_OUT    HH_ASSET    PARGUE      HEALTH      PSAFE1      PSAFE2      
+     PSAFE4      MV_LY       MV_NUM      MV_RN1      MV_RN2      MV_RN4      
+     MV_RN5      MV_RN7      MV_RN6      MV_RN10     MV_RN12     MV_FT       
+     MVFTR1      MVFTR2      MVFTR3      MVFTR4      MVFTR5      MVFTR6      
+     MVFTR7      MVFTR8      LTRCT       GRPMT       OPRT        INVT        
+     BODY        OBJECT      SPATIAL     VOC         LTRC        GRPM        
+     INV         OPR         RDCP        DCLT        DCWD        LANGNM      
+     ADD1T       SUB1T       STRAT0      STRAT1      STRAT2      STRAT3      
+     NID         DISC        MISS        ADD1        ADD2        SUB1        
+     SUB2        PROB        MULT        BGEF1       BGEF2       BGEF3       
+     BGEF4       BGEF6       BGEF8       BGEF9       BGEF10      SDQ1        
+     SDQ2        SDQ3        SDQ4        SDQ5        SDQ6        SDQ7R       
+     SDQ8        SDQ9        SDQ10       SDQ11R      SDQ12       SDQ13       
+     SDQ14R      SDQ15       SDQ16       SDQ17       SDQ18       SDQ19       
+     SDQ20       SDQ21R      SDQ22       SDQ23       SDQ24       SDQ25R      
+     BGEF5R      BGEF7R      DLBOP       DLBSM       DRBOP       DRBSM       
+     DTBOP       DTBSM       DSBOP       DSBSM       RBOP        RBSM        
+     ABOP        ABSM        DLLDMDR     DLLDMSR     DLLSMDR     DLLSMSR     
+     DRLDMDR     DRLDMSR     DRLSMDR     DRLSMSR     DTLDMDR     DTLDMSR     
+     DTLSMDR     DTLSMSR     DSLDMDR     DSLDMSR     DSSMDR      DSLSMSR     
+     RLDMDR      RLDMSR      RLSMDR      RLSMSR      ALDMDR      ALDMSR      
+     ALSMDR      ALSMSR      DIM         MITG_M      L1D0DI      L1D3DI      
+     L2D0DI      L2D3DI      L3D0DI      L3D3DI      L1D0MI      L1D3MI      
+     L2D0MI      L2D3MI      L3D0MI      L3D3MI      L1DI        L2DI        
+     L3DI        L1MI        L2MI        L3MI        DE0DI       DE3DI       
+     DE0MI       DE3MI       PSRA11      READLAN9    UNICEF      UNICEF_A    
+     VOCQ        LTRCQ       GRPMQ       INVQ        OPRQ        NIDQ        
+     DISCQ       MISSQ       ADD1Q       SUB1Q       MULTQ       HB1_AR1C    
+     HB1_DGT1    HB1_PS1C    HB2_AR1C    HB2_DGT1    HB2_PS1C    HB3_AR1C    
+     HB3_DGT1    HB3_PS1C    HB4_AR1C    HB4_DGT1    HB4_PS1C    HB5_AR1C    
+     HB5_DGT1    HB5_PS1C    HB6_AR1C    HB6_DGT1    HB6_PS1C  ; 
+   Missing are . ;
+
+
+ Usevariables are
+      PSRA1-PSRA10 PSRA11 PSRA12 PSRA13;
+ 
+ Categorical is    
+      PSRA1-PSRA10 PSRA11 PSRA12 PSRA13 ;
+ 
+    Cluster is LOCIDY1N;
+    
+    Subpopulation is half eq 0;
+
+Analysis:
+   Type = complex;
+   Estimator =wlsmv;
+     
+Model: 
+   PSRA by PSRA1* PSRA2-PSRA10 PSRA11 PSRA12 PSRA13;	 
+   PSRA@1;
+   PSRA10 WITH PSRA9;
+   PSRA6 WITH PSRA4;
+   PSRA8 WITH PSRA7;
+   
+Output: sampstat stdy stdyx modindices(all);
+
+	 

@@ -1,0 +1,592 @@
+Mplus VERSION 8.4 (Mac)
+MUTHEN & MUTHEN
+01/20/2021  11:45 AM
+
+INPUT INSTRUCTIONS
+
+  TITLE:
+  LBY1 Baseline Factor Analysis
+  DATA:
+  FILE = "Models/model1_287add39f3aa2ff5b540a569d24e7572.dat";
+
+  VARIABLE:
+  NAMES = LOCIDY1N HALF PSRA1 PSRA2 PSRA3 PSRA4 PSRA5 PSRA6 PSRA7 PSRA8 PSRA9 PSRA10
+       PSRA12 PSRA13 PSRA11;
+   MISSING=.;
+
+
+   Usevariables are
+        PSRA1-PSRA10 PSRA11 PSRA12 PSRA13;
+
+   Categorical is
+        PSRA1-PSRA10 PSRA11 PSRA12 PSRA13 ;
+
+      Cluster is LOCIDY1N;
+
+      Subpopulation is half eq 0;
+  ANALYSIS:
+  Type = complex;
+     Estimator =wlsmv;
+  MODEL:
+  PSRA by PSRA1* PSRA2-PSRA10 PSRA11 PSRA12 PSRA13;	
+     PSRA@1;
+  OUTPUT:
+  sampstat stdy modindices(all);
+
+
+
+*** WARNING
+  Data set contains cases with missing on all variables.
+  These cases were not included in the analysis.
+  Number of cases with missing on all variables:  320
+   1 WARNING(S) FOUND IN THE INPUT INSTRUCTIONS
+
+
+
+
+LBY1 Baseline Factor Analysis
+
+SUMMARY OF ANALYSIS
+
+Number of groups                                                 1
+Number of observations                                        2147
+
+Number of dependent variables                                   13
+Number of independent variables                                  0
+Number of continuous latent variables                            1
+
+Observed dependent variables
+
+  Binary and ordered categorical (ordinal)
+   PSRA1       PSRA2       PSRA3       PSRA4       PSRA5       PSRA6
+   PSRA7       PSRA8       PSRA9       PSRA10      PSRA11      PSRA12
+   PSRA13
+
+Continuous latent variables
+   PSRA
+
+Variables with special functions
+
+  Cluster variable      LOCIDY1N
+
+Estimator                                                    WLSMV
+Maximum number of iterations                                  1000
+Convergence criterion                                    0.500D-04
+Maximum number of steepest descent iterations                   20
+Maximum number of iterations for H1                           2000
+Convergence criterion for H1                             0.100D-03
+Parameterization                                             DELTA
+Link                                                        PROBIT
+
+Input data file(s)
+  Models/model1_287add39f3aa2ff5b540a569d24e7572.dat
+
+Input data format  FREE
+
+
+SUMMARY OF DATA
+
+     Number of missing data patterns            28
+     Number of clusters                         87
+
+
+
+UNIVARIATE PROPORTIONS AND COUNTS FOR CATEGORICAL VARIABLES
+
+    PSRA1
+      Category 1    0.112          241.000
+      Category 2    0.132          283.000
+      Category 3    0.203          435.000
+      Category 4    0.553         1186.000
+    PSRA2
+      Category 1    0.131          280.000
+      Category 2    0.160          343.000
+      Category 3    0.199          427.000
+      Category 4    0.510         1095.000
+    PSRA3
+      Category 1    0.113          243.000
+      Category 2    0.146          313.000
+      Category 3    0.217          466.000
+      Category 4    0.523         1121.000
+    PSRA4
+      Category 1    0.019           41.000
+      Category 2    0.108          231.000
+      Category 3    0.066          142.000
+      Category 4    0.806         1725.000
+    PSRA5
+      Category 1    0.092          197.000
+      Category 2    0.138          294.000
+      Category 3    0.163          349.000
+      Category 4    0.607         1296.000
+    PSRA6
+      Category 1    0.024           52.000
+      Category 2    0.055          118.000
+      Category 3    0.070          150.000
+      Category 4    0.850         1813.000
+    PSRA7
+      Category 1    0.092          197.000
+      Category 2    0.100          214.000
+      Category 3    0.226          483.000
+      Category 4    0.582         1243.000
+    PSRA8
+      Category 1    0.095          204.000
+      Category 2    0.077          165.000
+      Category 3    0.209          448.000
+      Category 4    0.619         1326.000
+    PSRA9
+      Category 1    0.033           71.000
+      Category 2    0.284          610.000
+      Category 3    0.321          689.000
+      Category 4    0.361          775.000
+    PSRA10
+      Category 1    0.115          245.000
+      Category 2    0.194          414.000
+      Category 3    0.339          722.000
+      Category 4    0.352          750.000
+    PSRA11
+      Category 1    0.045           95.000
+      Category 2    0.148          315.000
+      Category 3    0.094          201.000
+      Category 4    0.713         1517.000
+    PSRA12
+      Category 1    0.062          132.000
+      Category 2    0.102          219.000
+      Category 3    0.184          395.000
+      Category 4    0.652         1397.000
+    PSRA13
+      Category 1    0.044           94.000
+      Category 2    0.091          194.000
+      Category 3    0.131          281.000
+      Category 4    0.734         1571.000
+
+
+SAMPLE STATISTICS
+
+
+     ESTIMATED SAMPLE STATISTICS
+
+
+           MEANS/INTERCEPTS/THRESHOLDS
+              PSRA1$1       PSRA1$2       PSRA1$3       PSRA2$1       PSRA2$2
+              ________      ________      ________      ________      ________
+               -1.214        -0.693        -0.133        -1.124        -0.552
+
+
+           MEANS/INTERCEPTS/THRESHOLDS
+              PSRA2$3       PSRA3$1       PSRA3$2       PSRA3$3       PSRA4$1
+              ________      ________      ________      ________      ________
+               -0.026        -1.209        -0.645        -0.058        -2.071
+
+
+           MEANS/INTERCEPTS/THRESHOLDS
+              PSRA4$2       PSRA4$3       PSRA5$1       PSRA5$2       PSRA5$3
+              ________      ________      ________      ________      ________
+               -1.140        -0.865        -1.327        -0.739        -0.271
+
+
+           MEANS/INTERCEPTS/THRESHOLDS
+              PSRA6$1       PSRA6$2       PSRA6$3       PSRA7$1       PSRA7$2
+              ________      ________      ________      ________      ________
+               -1.971        -1.407        -1.036        -1.327        -0.869
+
+
+           MEANS/INTERCEPTS/THRESHOLDS
+              PSRA7$3       PSRA8$1       PSRA8$2       PSRA8$3       PSRA9$1
+              ________      ________      ________      ________      ________
+               -0.206        -1.309        -0.946        -0.302        -1.837
+
+
+           MEANS/INTERCEPTS/THRESHOLDS
+              PSRA9$2       PSRA9$3       PSRA10$1      PSRA10$2      PSRA10$3
+              ________      ________      ________      ________      ________
+               -0.475         0.355        -1.201        -0.498         0.380
+
+
+           MEANS/INTERCEPTS/THRESHOLDS
+              PSRA11$1      PSRA11$2      PSRA11$3      PSRA12$1      PSRA12$2
+              ________      ________      ________      ________      ________
+               -1.699        -0.868        -0.562        -1.542        -0.979
+
+
+           MEANS/INTERCEPTS/THRESHOLDS
+              PSRA12$3      PSRA13$1      PSRA13$2      PSRA13$3
+              ________      ________      ________      ________
+               -0.390        -1.707        -1.105        -0.625
+
+
+           CORRELATION MATRIX (WITH VARIANCES ON THE DIAGONAL)
+              PSRA1         PSRA2         PSRA3         PSRA4         PSRA5
+              ________      ________      ________      ________      ________
+ PSRA1
+ PSRA2          0.942
+ PSRA3          0.944         0.942
+ PSRA4          0.760         0.738         0.726
+ PSRA5          0.860         0.861         0.862         0.735
+ PSRA6          0.670         0.637         0.644         0.792         0.657
+ PSRA7          0.882         0.871         0.876         0.709         0.821
+ PSRA8          0.879         0.871         0.874         0.706         0.821
+ PSRA9          0.727         0.754         0.738         0.604         0.693
+ PSRA10         0.792         0.805         0.801         0.622         0.760
+ PSRA11         0.665         0.630         0.648         0.641         0.616
+ PSRA12         0.865         0.857         0.858         0.705         0.807
+ PSRA13         0.809         0.787         0.795         0.698         0.742
+
+
+           CORRELATION MATRIX (WITH VARIANCES ON THE DIAGONAL)
+              PSRA6         PSRA7         PSRA8         PSRA9         PSRA10
+              ________      ________      ________      ________      ________
+ PSRA7          0.664
+ PSRA8          0.688         0.911
+ PSRA9          0.564         0.787         0.784
+ PSRA10         0.499         0.809         0.814         0.796
+ PSRA11         0.653         0.666         0.702         0.576         0.643
+ PSRA12         0.686         0.862         0.870         0.754         0.797
+ PSRA13         0.722         0.814         0.824         0.728         0.724
+
+
+           CORRELATION MATRIX (WITH VARIANCES ON THE DIAGONAL)
+              PSRA11        PSRA12        PSRA13
+              ________      ________      ________
+ PSRA12         0.735
+ PSRA13         0.739         0.860
+
+
+THE MODEL ESTIMATION TERMINATED NORMALLY
+
+
+
+MODEL FIT INFORMATION
+
+Number of Free Parameters                       52
+
+Chi-Square Test of Model Fit
+
+          Value                           1121.766*
+          Degrees of Freedom                    65
+          P-Value                           0.0000
+
+*   The chi-square value for MLM, MLMV, MLR, ULSMV, WLSM and WLSMV cannot be used
+    for chi-square difference testing in the regular way.  MLM, MLR and WLSM
+    chi-square difference testing is described on the Mplus website.  MLMV, WLSMV,
+    and ULSMV difference testing is done using the DIFFTEST option.
+
+RMSEA (Root Mean Square Error Of Approximation)
+
+          Estimate                           0.087
+          90 Percent C.I.                    0.083  0.092
+          Probability RMSEA <= .05           0.000
+
+CFI/TLI
+
+          CFI                                0.990
+          TLI                                0.988
+
+Chi-Square Test of Model Fit for the Baseline Model
+
+          Value                         106870.038
+          Degrees of Freedom                    78
+          P-Value                           0.0000
+
+SRMR (Standardized Root Mean Square Residual)
+
+          Value                              0.037
+
+Optimum Function Value for Weighted Least-Squares Estimator
+
+          Value                     0.13149624D+00
+
+
+
+MODEL RESULTS
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ PSRA     BY
+    PSRA1              0.966      0.003    364.162      0.000
+    PSRA2              0.962      0.003    310.013      0.000
+    PSRA3              0.965      0.003    312.374      0.000
+    PSRA4              0.792      0.015     52.166      0.000
+    PSRA5              0.885      0.011     84.087      0.000
+    PSRA6              0.753      0.021     36.421      0.000
+    PSRA7              0.932      0.006    166.107      0.000
+    PSRA8              0.935      0.005    188.730      0.000
+    PSRA9              0.823      0.012     70.461      0.000
+    PSRA10             0.856      0.009     99.310      0.000
+    PSRA11             0.741      0.019     38.348      0.000
+    PSRA12             0.918      0.006    143.635      0.000
+    PSRA13             0.877      0.010     85.367      0.000
+
+ Thresholds
+    PSRA1$1           -1.214      0.056    -21.559      0.000
+    PSRA1$2           -0.693      0.047    -14.710      0.000
+    PSRA1$3           -0.133      0.044     -3.032      0.002
+    PSRA2$1           -1.124      0.058    -19.346      0.000
+    PSRA2$2           -0.552      0.051    -10.760      0.000
+    PSRA2$3           -0.026      0.047     -0.556      0.578
+    PSRA3$1           -1.209      0.056    -21.521      0.000
+    PSRA3$2           -0.645      0.050    -12.997      0.000
+    PSRA3$3           -0.058      0.048     -1.219      0.223
+    PSRA4$1           -2.071      0.077    -26.853      0.000
+    PSRA4$2           -1.140      0.049    -23.143      0.000
+    PSRA4$3           -0.865      0.044    -19.484      0.000
+    PSRA5$1           -1.327      0.058    -22.781      0.000
+    PSRA5$2           -0.739      0.053    -13.854      0.000
+    PSRA5$3           -0.271      0.048     -5.689      0.000
+    PSRA6$1           -1.971      0.078    -25.381      0.000
+    PSRA6$2           -1.407      0.053    -26.677      0.000
+    PSRA6$3           -1.036      0.051    -20.455      0.000
+    PSRA7$1           -1.327      0.065    -20.392      0.000
+    PSRA7$2           -0.869      0.051    -16.914      0.000
+    PSRA7$3           -0.206      0.045     -4.611      0.000
+    PSRA8$1           -1.309      0.063    -20.853      0.000
+    PSRA8$2           -0.946      0.054    -17.487      0.000
+    PSRA8$3           -0.302      0.044     -6.921      0.000
+    PSRA9$1           -1.837      0.073    -25.205      0.000
+    PSRA9$2           -0.475      0.051     -9.287      0.000
+    PSRA9$3            0.355      0.040      8.769      0.000
+    PSRA10$1          -1.201      0.055    -21.710      0.000
+    PSRA10$2          -0.498      0.049    -10.189      0.000
+    PSRA10$3           0.380      0.042      8.950      0.000
+    PSRA11$1          -1.699      0.069    -24.563      0.000
+    PSRA11$2          -0.868      0.041    -21.205      0.000
+    PSRA11$3          -0.562      0.037    -15.123      0.000
+    PSRA12$1          -1.542      0.067    -22.847      0.000
+    PSRA12$2          -0.979      0.054    -18.262      0.000
+    PSRA12$3          -0.390      0.044     -8.918      0.000
+    PSRA13$1          -1.707      0.071    -24.076      0.000
+    PSRA13$2          -1.105      0.058    -18.974      0.000
+    PSRA13$3          -0.625      0.054    -11.551      0.000
+
+ Variances
+    PSRA               1.000      0.000    999.000    999.000
+
+
+STANDARDIZED MODEL RESULTS
+
+
+STDY Standardization
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ PSRA     BY
+    PSRA1              0.966      0.003    364.162      0.000
+    PSRA2              0.962      0.003    310.013      0.000
+    PSRA3              0.965      0.003    312.374      0.000
+    PSRA4              0.792      0.015     52.166      0.000
+    PSRA5              0.885      0.011     84.087      0.000
+    PSRA6              0.753      0.021     36.421      0.000
+    PSRA7              0.932      0.006    166.107      0.000
+    PSRA8              0.935      0.005    188.730      0.000
+    PSRA9              0.823      0.012     70.461      0.000
+    PSRA10             0.856      0.009     99.310      0.000
+    PSRA11             0.741      0.019     38.348      0.000
+    PSRA12             0.918      0.006    143.635      0.000
+    PSRA13             0.877      0.010     85.367      0.000
+
+ Thresholds
+    PSRA1$1           -1.214      0.056    -21.559      0.000
+    PSRA1$2           -0.693      0.047    -14.710      0.000
+    PSRA1$3           -0.133      0.044     -3.032      0.002
+    PSRA2$1           -1.124      0.058    -19.346      0.000
+    PSRA2$2           -0.552      0.051    -10.760      0.000
+    PSRA2$3           -0.026      0.047     -0.556      0.578
+    PSRA3$1           -1.209      0.056    -21.521      0.000
+    PSRA3$2           -0.645      0.050    -12.997      0.000
+    PSRA3$3           -0.058      0.048     -1.219      0.223
+    PSRA4$1           -2.071      0.077    -26.853      0.000
+    PSRA4$2           -1.140      0.049    -23.143      0.000
+    PSRA4$3           -0.865      0.044    -19.484      0.000
+    PSRA5$1           -1.327      0.058    -22.781      0.000
+    PSRA5$2           -0.739      0.053    -13.854      0.000
+    PSRA5$3           -0.271      0.048     -5.689      0.000
+    PSRA6$1           -1.971      0.078    -25.381      0.000
+    PSRA6$2           -1.407      0.053    -26.677      0.000
+    PSRA6$3           -1.036      0.051    -20.455      0.000
+    PSRA7$1           -1.327      0.065    -20.392      0.000
+    PSRA7$2           -0.869      0.051    -16.914      0.000
+    PSRA7$3           -0.206      0.045     -4.611      0.000
+    PSRA8$1           -1.309      0.063    -20.853      0.000
+    PSRA8$2           -0.946      0.054    -17.487      0.000
+    PSRA8$3           -0.302      0.044     -6.921      0.000
+    PSRA9$1           -1.837      0.073    -25.205      0.000
+    PSRA9$2           -0.475      0.051     -9.287      0.000
+    PSRA9$3            0.355      0.040      8.769      0.000
+    PSRA10$1          -1.201      0.055    -21.710      0.000
+    PSRA10$2          -0.498      0.049    -10.189      0.000
+    PSRA10$3           0.380      0.042      8.950      0.000
+    PSRA11$1          -1.699      0.069    -24.563      0.000
+    PSRA11$2          -0.868      0.041    -21.205      0.000
+    PSRA11$3          -0.562      0.037    -15.123      0.000
+    PSRA12$1          -1.542      0.067    -22.847      0.000
+    PSRA12$2          -0.979      0.054    -18.262      0.000
+    PSRA12$3          -0.390      0.044     -8.918      0.000
+    PSRA13$1          -1.707      0.071    -24.076      0.000
+    PSRA13$2          -1.105      0.058    -18.974      0.000
+    PSRA13$3          -0.625      0.054    -11.551      0.000
+
+ Variances
+    PSRA               1.000      0.000    999.000    999.000
+
+
+R-SQUARE
+
+    Observed                                        Two-Tailed   Residual
+    Variable        Estimate       S.E.  Est./S.E.    P-Value    Variance
+
+    PSRA1              0.933      0.005    182.081      0.000      0.067
+    PSRA2              0.925      0.006    155.006      0.000      0.075
+    PSRA3              0.931      0.006    156.187      0.000      0.069
+    PSRA4              0.628      0.024     26.083      0.000      0.372
+    PSRA5              0.783      0.019     42.043      0.000      0.217
+    PSRA6              0.568      0.031     18.211      0.000      0.432
+    PSRA7              0.869      0.010     83.053      0.000      0.131
+    PSRA8              0.874      0.009     94.365      0.000      0.126
+    PSRA9              0.677      0.019     35.231      0.000      0.323
+    PSRA10             0.733      0.015     49.655      0.000      0.267
+    PSRA11             0.550      0.029     19.174      0.000      0.450
+    PSRA12             0.843      0.012     71.818      0.000      0.157
+    PSRA13             0.769      0.018     42.684      0.000      0.231
+
+
+QUALITY OF NUMERICAL RESULTS
+
+     Condition Number for the Information Matrix              0.579E-03
+       (ratio of smallest to largest eigenvalue)
+
+
+MODEL MODIFICATION INDICES
+
+Minimum M.I. value for printing the modification index    10.000
+
+                                   M.I.     E.P.C.  Std E.P.C.  StdYX E.P.C.
+
+ON Statements
+
+PSRA1    ON PSRA2                 45.906     0.033      0.033        0.033
+PSRA1    ON PSRA3                 57.827     0.036      0.036        0.036
+PSRA1    ON PSRA6                 10.118    -0.064     -0.064       -0.064
+PSRA1    ON PSRA7                 12.560    -0.024     -0.024       -0.024
+PSRA1    ON PSRA8                 23.298    -0.033     -0.033       -0.033
+PSRA1    ON PSRA9                 32.272    -0.076     -0.076       -0.076
+PSRA1    ON PSRA10                20.955    -0.042     -0.042       -0.042
+PSRA1    ON PSRA12                15.213    -0.029     -0.029       -0.029
+PSRA1    ON PSRA13                16.725    -0.045     -0.045       -0.045
+PSRA2    ON PSRA1                 45.905     0.033      0.033        0.033
+PSRA2    ON PSRA3                 48.546     0.034      0.034        0.034
+PSRA2    ON PSRA6                 20.424    -0.096     -0.096       -0.096
+PSRA2    ON PSRA7                 22.857    -0.034     -0.034       -0.034
+PSRA2    ON PSRA8                 20.907    -0.035     -0.035       -0.035
+PSRA2    ON PSRA9                 14.995    -0.044     -0.044       -0.044
+PSRA2    ON PSRA11                23.889    -0.092     -0.092       -0.092
+PSRA2    ON PSRA12                12.012    -0.031     -0.031       -0.031
+PSRA2    ON PSRA13                22.012    -0.062     -0.062       -0.062
+PSRA3    ON PSRA1                 57.827     0.036      0.036        0.036
+PSRA3    ON PSRA2                 48.546     0.034      0.034        0.034
+PSRA3    ON PSRA6                 17.426    -0.091     -0.091       -0.091
+PSRA3    ON PSRA7                 16.938    -0.030     -0.030       -0.030
+PSRA3    ON PSRA8                 25.126    -0.036     -0.036       -0.036
+PSRA3    ON PSRA9                 26.110    -0.064     -0.064       -0.064
+PSRA3    ON PSRA10                12.611    -0.031     -0.031       -0.031
+PSRA3    ON PSRA11                15.686    -0.075     -0.075       -0.075
+PSRA3    ON PSRA12                17.193    -0.034     -0.034       -0.034
+PSRA3    ON PSRA13                21.653    -0.058     -0.058       -0.058
+PSRA4    ON PSRA6                216.933     0.234      0.234        0.234
+PSRA4    ON PSRA10                11.147    -0.061     -0.061       -0.061
+PSRA6    ON PSRA1                 10.119    -0.064     -0.064       -0.064
+PSRA6    ON PSRA2                 20.426    -0.096     -0.096       -0.096
+PSRA6    ON PSRA3                 17.428    -0.091     -0.091       -0.091
+PSRA6    ON PSRA4                216.931     0.234      0.234        0.234
+PSRA6    ON PSRA10                49.439    -0.158     -0.158       -0.158
+PSRA6    ON PSRA11                20.471     0.103      0.103        0.103
+PSRA6    ON PSRA13                18.736     0.072      0.072        0.072
+PSRA7    ON PSRA1                 12.556    -0.024     -0.024       -0.024
+PSRA7    ON PSRA2                 22.851    -0.034     -0.034       -0.034
+PSRA7    ON PSRA3                 16.933    -0.030     -0.030       -0.030
+PSRA7    ON PSRA8                108.637     0.065      0.065        0.065
+PSRA8    ON PSRA1                 23.306    -0.033     -0.033       -0.033
+PSRA8    ON PSRA2                 20.915    -0.035     -0.035       -0.035
+PSRA8    ON PSRA3                 25.135    -0.036     -0.036       -0.036
+PSRA8    ON PSRA7                108.611     0.065      0.065        0.065
+PSRA9    ON PSRA1                 32.271    -0.076     -0.076       -0.076
+PSRA9    ON PSRA2                 14.995    -0.044     -0.044       -0.044
+PSRA9    ON PSRA3                 26.110    -0.064     -0.064       -0.064
+PSRA9    ON PSRA10               182.345     0.123      0.123        0.123
+PSRA10   ON PSRA1                 20.952    -0.042     -0.042       -0.042
+PSRA10   ON PSRA3                 12.609    -0.031     -0.031       -0.031
+PSRA10   ON PSRA4                 11.143    -0.061     -0.061       -0.061
+PSRA10   ON PSRA6                 49.428    -0.158     -0.158       -0.158
+PSRA10   ON PSRA9                182.351     0.123      0.123        0.123
+PSRA11   ON PSRA2                 23.890    -0.092     -0.092       -0.092
+PSRA11   ON PSRA3                 15.688    -0.075     -0.075       -0.075
+PSRA11   ON PSRA6                 20.471     0.103      0.103        0.103
+PSRA11   ON PSRA12                16.322     0.063      0.063        0.063
+PSRA11   ON PSRA13                34.703     0.101      0.101        0.101
+PSRA12   ON PSRA1                 15.210    -0.029     -0.029       -0.029
+PSRA12   ON PSRA2                 12.008    -0.031     -0.031       -0.031
+PSRA12   ON PSRA3                 17.190    -0.034     -0.034       -0.034
+PSRA12   ON PSRA11                16.328     0.063      0.063        0.063
+PSRA12   ON PSRA13                70.194     0.076      0.076        0.076
+PSRA13   ON PSRA1                 16.723    -0.045     -0.045       -0.045
+PSRA13   ON PSRA2                 22.009    -0.062     -0.062       -0.062
+PSRA13   ON PSRA3                 21.651    -0.058     -0.058       -0.058
+PSRA13   ON PSRA6                 18.740     0.072      0.072        0.072
+PSRA13   ON PSRA11                34.708     0.101      0.101        0.101
+PSRA13   ON PSRA12                70.190     0.076      0.076        0.076
+
+WITH Statements
+
+PSRA2    WITH PSRA1               45.906     0.033      0.033        0.463
+PSRA3    WITH PSRA1               57.827     0.036      0.036        0.523
+PSRA3    WITH PSRA2               48.546     0.034      0.034        0.475
+PSRA6    WITH PSRA1               10.118    -0.064     -0.064       -0.380
+PSRA6    WITH PSRA2               20.423    -0.096     -0.096       -0.531
+PSRA6    WITH PSRA3               17.426    -0.091     -0.091       -0.523
+PSRA6    WITH PSRA4              216.935     0.234      0.234        0.584
+PSRA7    WITH PSRA1               12.560    -0.024     -0.024       -0.261
+PSRA7    WITH PSRA2               22.857    -0.034     -0.034       -0.338
+PSRA7    WITH PSRA3               16.938    -0.030     -0.030       -0.312
+PSRA8    WITH PSRA1               23.298    -0.033     -0.033       -0.359
+PSRA8    WITH PSRA2               20.906    -0.035     -0.035       -0.356
+PSRA8    WITH PSRA3               25.126    -0.036     -0.036       -0.386
+PSRA8    WITH PSRA7              108.626     0.065      0.065        0.505
+PSRA9    WITH PSRA1               32.271    -0.076     -0.076       -0.516
+PSRA9    WITH PSRA2               14.995    -0.044     -0.044       -0.283
+PSRA9    WITH PSRA3               26.110    -0.064     -0.064       -0.429
+PSRA10   WITH PSRA1               20.955    -0.042     -0.042       -0.314
+PSRA10   WITH PSRA3               12.611    -0.031     -0.031       -0.226
+PSRA10   WITH PSRA4               11.146    -0.061     -0.061       -0.194
+PSRA10   WITH PSRA6               49.436    -0.158     -0.158       -0.464
+PSRA10   WITH PSRA9              182.345     0.123      0.123        0.419
+PSRA11   WITH PSRA2               23.888    -0.092     -0.092       -0.498
+PSRA11   WITH PSRA3               15.686    -0.075     -0.075       -0.423
+PSRA11   WITH PSRA6               20.473     0.103      0.103        0.233
+PSRA12   WITH PSRA1               15.213    -0.029     -0.029       -0.279
+PSRA12   WITH PSRA2               12.011    -0.031     -0.031       -0.282
+PSRA12   WITH PSRA3               17.193    -0.034     -0.034       -0.324
+PSRA12   WITH PSRA11              16.323     0.063      0.063        0.238
+PSRA13   WITH PSRA1               16.725    -0.045     -0.045       -0.363
+PSRA13   WITH PSRA2               22.011    -0.062     -0.062       -0.473
+PSRA13   WITH PSRA3               21.653    -0.058     -0.058       -0.462
+PSRA13   WITH PSRA6               18.738     0.072      0.072        0.229
+PSRA13   WITH PSRA11              34.706     0.101      0.101        0.313
+PSRA13   WITH PSRA12              70.187     0.076      0.076        0.397
+
+
+     Beginning Time:  11:45:15
+        Ending Time:  11:45:16
+       Elapsed Time:  00:00:01
+
+
+
+MUTHEN & MUTHEN
+3463 Stoner Ave.
+Los Angeles, CA  90066
+
+Tel: (310) 391-9971
+Fax: (310) 391-8971
+Web: www.StatModel.com
+Support: Support@StatModel.com
+
+Copyright (c) 1998-2019 Muthen & Muthen
