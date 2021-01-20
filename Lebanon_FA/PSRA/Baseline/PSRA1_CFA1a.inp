@@ -1,7 +1,7 @@
 Title: LBY1 Baseline Factor Analysis;
 
 Data:
-   File is ../../../../MR automation/LBY1B_PREIMPUTED_FULL_SPREAD_10-31-2019_mplus.dat ;
+   File is ../../../../MR automation/LBY1B_PREIMPUTED_FULL_SPREAD_10-31-2019_mplus.dat;
 
 Variable:
    Names are     STID_Y1N    CID_1N      CID_2N      CID_3N      LOCIDY1N    RAND        
